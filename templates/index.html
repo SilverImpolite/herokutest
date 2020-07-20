@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p>Main page</p>
+    <p>Hello {{name}} it is {{current_year}}!</p>
+
+    <ul>
+    {% if cities %}
+        {% for city in cities %}
+             <li>{{city}}</li>
+        {% endfor %}
+     {% endif %}
+    </ul>
+{% endblock content %}
